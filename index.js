@@ -1,21 +1,16 @@
-let num = 1.2345678923456789234567823456798632576879878675645346576879809234567876543234567898765432345678
+const outputField = document.getElementById("output-field")
 
 const runCode = () => {
-    generate()
+    doWork(getTime)
 }
 
-const generate = () => {
-    getRandomNumberAfterDelay((result) => console.log("result: " + result), err => console.log("error: " + err))
+const getTime = () => {
+    const d = new Date();
+    return d
 }
 
-const getRandomNumberAfterDelay = (succsessCallBack, errorCallBack) => {
-    setTimeout(() => {
-        try {
-            const randomNumber = Math.floor(Math.random() * 200)
-            let newNum = num.toFixed(randomNumber)
-            succsessCallBack(newNum)
-        } catch (err) {
-            errorCallBack(err)
-        }
-    }, 0);
+const doWork = (callback) => {
+    console.log("start")
+    console.log(callback())
+    console.log("end")
 }

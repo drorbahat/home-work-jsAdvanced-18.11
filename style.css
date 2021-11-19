@@ -1,23 +1,32 @@
-@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
-
-html{
-    height: 100%;
-}
-
-body {
-    min-height: 100%;
-    padding: 0;
-    background-image: linear-gradient(to right top, #3d184b, #384b88, #007fbc, #00b4dd, #12e8eb);
+#main-container {
+    text-align: center;
+    height: 100vh;
+    background: linear-gradient(45deg, rgb(47, 9, 73) 0%, rgb(61, 148, 54) 70%, rgb(3, 255, 179) 100%);
     background-repeat: no-repeat;
 }
 
-#run-button {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 3rem;
+#output-field {
+    background-color: rgba(255, 255, 255, 0.24);
+    margin: auto;
+    width: 300px;
+    border-radius: 10px;
+
+
+}
+
+.title {
+    background-color: rgba(0, 0, 0, 0.267);
+    color: white;
+}
+
+.code-input {
+    border-radius: 7px;
+    background-color: rgba(255, 255, 255, 0.281);
+    border-color: rgba(0, 255, 255, 0);
     text-align: center;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    box-shadow: 0px 0px 5px 1px #3d184b;
+}
+
+.code-input:focus {
+    outline: 0px;
+
 }
