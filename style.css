@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+html{
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    padding: 0;
+    background-image: linear-gradient(to right top, #3d184b, #384b88, #007fbc, #00b4dd, #12e8eb);
+    background-repeat: no-repeat;
+}
+
+#run-button {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0px 0px 5px 1px #3d184b;
+}
