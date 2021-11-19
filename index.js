@@ -17,5 +17,5 @@ const getRandomNumberAfterDelay = (succsessCallBack, errorCallBack) => {
         } catch (err) {
             errorCallBack(err)
         }
-    }, 0);
+    }, 1000);
 }
