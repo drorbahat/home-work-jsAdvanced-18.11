@@ -1,16 +1,17 @@
 const outputField = document.getElementById("output-field")
+const date = new Date();
 
 const runCode = () => {
     doWork(getTime)
 }
 
 const getTime = () => {
-    const d = new Date();
-    return d
+    let time = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds()
+    console.log(time)
 }
 
-const doWork = (callback) => {
+const doWork = (callback, time) => {
     console.log("start")
-    console.log(callback())
+    callback(time)
     console.log("end")
 }
